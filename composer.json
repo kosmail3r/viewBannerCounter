@@ -1,0 +1,20 @@
+{
+  "name": "kosmailer/viewBannerCounter",
+  "description": "Test task for some company",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Konstantin Soroka",
+      "email": "kosmailer@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">7"
+  },
+  "autoload": {
+    "psr-4": {
+      "Classes\\": "Classes/"
+    }
+  }
+}
