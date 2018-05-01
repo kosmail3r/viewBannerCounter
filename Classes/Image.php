@@ -1,7 +1,5 @@
 <?php
-
 namespace Classes;
-
 
 class Image
 {
@@ -20,11 +18,11 @@ class Image
      */
     public function showImage()
     {
-        $image_url = $this->imagePath;
-        $image_info = getimagesize($image_url);
-        if ($image_info) {
-            header('Content-type: ' . $image_info['mime']);
-            readfile($image_url);
+        $imageUrl = $this->imagePath;
+        $imageInfo = getimagesize($imageUrl);
+        if ($imageInfo) {
+            header('Content-type: ' . $imageInfo['mime']);
+            readfile($imageUrl);
             return true;
         }
         return false;
